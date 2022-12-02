@@ -9,6 +9,12 @@ type Service struct {
 	Visibility  Visibility `json:"visibility"`
 	TeamId      string     `json:"teamId"`
 	Tags        []string   `json:"tags,omitempty"`
+	Links       Links      `json:"links"`
+}
+
+type Links struct {
+	Web string `json:"web"`
+	Api string `json:"api"`
 }
 
 type CreateResult struct {
